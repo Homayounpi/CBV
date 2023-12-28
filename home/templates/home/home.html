@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<h4>Home {{ username }}</h4>
+
+    {% comment %} {% for car in objects_list %} {% endcomment %}
+    {% for car in cars %}
+        <a href="{% url 'home:Car_Detail' car.year car.name car.owner %}">{{ car.name }}</a> 
+        <a href='{% url "home:delete_Car" car.id %}'>  Delete</a>
+        <a href='{% url "home:Update_Car" car.id %}'>  Update</a>
+        
+        <br><br>
+    {% endfor %}
+
+{% endblock %}

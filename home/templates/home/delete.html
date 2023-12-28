@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form method='post' action=''> 
+
+    {% csrf_token %}
+    <p> Are you  shore "{{ object }}"</p>
+    <input type='submit' value='Delete'>
+
+
+</form>
+
+
+{% endblock %}

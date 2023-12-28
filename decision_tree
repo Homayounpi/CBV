@@ -1,0 +1,28 @@
+// The Decision Tree
+digraph {
+	"aya chizi entekhab kardi"
+	"aya a has"
+	"aya chizi entekhab kardi" -> "aya a has" [label=Yes]
+	"aya a has"
+	"barname hads zade has"
+	"aya a has" -> "barname hads zade has" [label=Yes]
+	"barname hads zade has"
+	" barname hads nazade has"
+	"aya a has" -> " barname hads nazade has" [label=No]
+	" barname hads nazade has"
+	"aya chizi entekhab kardi"
+	"aya chizi entekhab kardi" -> "aya chizi entekhab kardi" [label=No]
+	"aya chizi entekhab kardi"
+	"aya a has"
+	"aya chizi entekhab kardi" -> "aya a has" [label=Yes]
+	"aya a has"
+	" barname hads zade has !"
+	"aya a has" -> " barname hads zade has !" [label=Yes]
+	" barname hads zade has !"
+	"  barname hads nazade has"
+	"aya a has" -> "  barname hads nazade has" [label=No]
+	"  barname hads nazade has"
+	"   barname hads nazade has."
+	"aya chizi entekhab kardi" -> "   barname hads nazade has." [label=No]
+	"   barname hads nazade has."
+}
